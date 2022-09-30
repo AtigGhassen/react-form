@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
-import { Typography, Button, Grid } from '@mui/material';
+import { Typography,  Grid } from '@mui/material';
+import TextField from '@mui/material/TextField';
 
-const PageTitle = ({ heading = '', subHeading = '', docs = '', ...rest }) => {
+const PageTitle = ({ heading = '', subHeading = '', ...rest }) => {
   return (
     <Grid
       container
@@ -17,16 +17,12 @@ const PageTitle = ({ heading = '', subHeading = '', docs = '', ...rest }) => {
         <Typography variant="subtitle2">{subHeading}</Typography>
       </Grid>
       <Grid item>
-        <Button
-          href={docs}
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ mt: { xs: 2, md: 0 } }}
-          variant="contained"
-          startIcon={<AddTwoToneIcon fontSize="small" />}
-        >
-          {heading} Documentation
-        </Button>
+      <TextField
+                      required
+                      id="outlined-required"
+                      label="Required"
+                      defaultValue=""
+                    />
       </Grid>
     </Grid>
   );

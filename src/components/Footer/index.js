@@ -18,7 +18,7 @@ function Footer() {
       >
         <Box>
           <Typography variant="subtitle1">
-            &copy; 2022 - Tokyo Free Black React Javascript Admin Dashboard
+            &copy; 2022 - Sastec Diagnostics
           </Typography>
         </Box>
         <Typography

@@ -3,13 +3,13 @@ import { alpha, createTheme, darken } from '@mui/material';
 // import i18n from 'src/i18n/i18n';
 
 const themeColors = {
-  primary: '#8C7CF0',
+  primary: '#2998D4',
   secondary: '#9EA4C1',
   success: '#57CA22',
   warning: '#FFA319',
   error: '#FF1943',
   info: '#33C2FF',
-  black: '#CBCCD2',
+  black: '#ffffff',
   white: '#111633',
   primaryAlt: '#111633',
   trueWhite: '#ffffff'

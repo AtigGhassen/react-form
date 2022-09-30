@@ -98,7 +98,7 @@ function Logo() {
 
   return (
     <TooltipWrapper
-      title="Tokyo Free Black React Javascript Admin Dashboard"
+      title="Sastec Diagnostics"
       arrow
     >
       <LogoWrapper to="/overview">
@@ -112,7 +112,7 @@ function Logo() {
           }}
           overlap="circular"
           color="success"
-          badgeContent="2.0"
+          badgeContent=""
         >
           <LogoSignWrapper>
             <LogoSign>

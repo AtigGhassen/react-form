@@ -122,7 +122,7 @@ function DashboardTasks() {
   return (
     <>
       <Helmet>
-        <title>Tasks Dashboard</title>
+        <title>Sastec diagnostics</title>
       </Helmet>
       <PageTitleWrapper>
         <PageHeader />

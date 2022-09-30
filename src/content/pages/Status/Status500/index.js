@@ -130,7 +130,7 @@ function Status500() {
                     my: 2
                   }}
                 >
-                  Tokyo Free Black React Javascript Admin Dashboard
+                  Sastec Diagnostics
                 </TypographyPrimary>
                 <TypographySecondary
                   variant="h4"

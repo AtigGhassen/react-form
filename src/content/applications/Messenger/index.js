@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 
 import TopBarContent from './TopBarContent';
 import BottomBarContent from './BottomBarContent';
-import SidebarContent from './SidebarContent';
+// import SidebarContent from './SidebarContent';
 import ChatContent from './ChatContent';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 
@@ -14,9 +14,9 @@ import {
   Box,
   styled,
   Divider,
-  Drawer,
+  // Drawer,
   IconButton,
-  useTheme
+  // useTheme
 } from '@mui/material';
 
 const RootWrapper = styled(Box)(
@@ -26,13 +26,13 @@ const RootWrapper = styled(Box)(
 `
 );
 
-const Sidebar = styled(Box)(
-  ({ theme }) => `
-        width: 300px;
-        background: ${theme.colors.alpha.white[100]};
-        border-right: ${theme.colors.alpha.black[10]} solid 1px;
-`
-);
+// const Sidebar = styled(Box)(
+//   ({ theme }) => `
+//         width: 300px;
+//         background: ${theme.colors.alpha.white[100]};
+//         border-right: ${theme.colors.alpha.black[10]} solid 1px;
+// `
+// );
 
 const ChatWindow = styled(Box)(
   () => `
@@ -61,20 +61,20 @@ const IconButtonToggle = styled(IconButton)(
 `
 );
 
-const DrawerWrapperMobile = styled(Drawer)(
-  () => `
-    width: 340px;
-    flex-shrink: 0;
+// const DrawerWrapperMobile = styled(Drawer)(
+//   () => `
+//     width: 340px;
+//     flex-shrink: 0;
 
-  & > .MuiPaper-root {
-        width: 340px;
-        z-index: 3;
-  }
-`
-);
+//   & > .MuiPaper-root {
+//         width: 340px;
+//         z-index: 3;
+//   }
+// `
+// );
 
 function ApplicationsMessenger() {
-  const theme = useTheme();
+  // const theme = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -87,7 +87,7 @@ function ApplicationsMessenger() {
         <title>Messenger - Applications</title>
       </Helmet>
       <RootWrapper className="Mui-FixedWrapper">
-        <DrawerWrapperMobile
+        {/* <DrawerWrapperMobile
           sx={{
             display: { lg: 'none', xs: 'inline-block' }
           }}
@@ -108,7 +108,7 @@ function ApplicationsMessenger() {
           <Scrollbar>
             <SidebarContent />
           </Scrollbar>
-        </Sidebar>
+        </Sidebar> */}
         <ChatWindow>
           <ChatTopBar
             sx={{

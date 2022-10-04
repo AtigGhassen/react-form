@@ -10,6 +10,7 @@ import {
   Divider,
   Switch
 } from '@mui/material';
+import TextField from '@mui/material/TextField';
 
 function NotificationsTab() {
   const [state, setState] = useState({
@@ -30,10 +31,9 @@ function NotificationsTab() {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Box pb={2}>
-          <Typography variant="h3">Account</Typography>
+          <Typography variant="h3">Nom de l</Typography>
           <Typography variant="subtitle2">
-            Choose what notifications you want to receive
-          </Typography>
+          Quel est le nom de votre organisation ?           </Typography>
         </Box>
         <Card>
           <List>
@@ -62,15 +62,15 @@ function NotificationsTab() {
                   variant: 'subtitle2',
                   lineHeight: 1
                 }}
-                primary="Weekly Report"
+                primary="Quelle est votre fonction ?"
                 secondary="Receive account status weekly report in your inbox"
               />
-              <Switch
-                color="primary"
-                checked={state.checkedB}
-                onChange={handleChange}
-                name="checkedB"
-              />
+              <TextField
+                      required
+                      id="outlined-required"
+                      label="Required"
+                      defaultValue=""
+                    />
             </ListItem>
           </List>
         </Card>

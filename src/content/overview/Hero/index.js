@@ -52,6 +52,12 @@ function Hero() {
     setSelectedValue(event.target.value);
   };
 
+  // const result = googleFormsToJson(
+  //   'https://docs.google.com/forms/d/e/1FAIpQLSdJDcBsutfZEFAzE_ZUDhanHistpOHkcaQpnw9j5pZ9wGfTQQ/viewform'
+  // )
+
+  // console.log(result.fields)
+
   return (
     <Container maxWidth="lg" sx={{ textAlign: 'center' }}>
       <Grid
@@ -215,9 +221,9 @@ function Hero() {
                   <PageTitleWrapper>
                 <PageTitle
                  heading={selectedValue}
-          subHeading="Intitulé du projet"
-        />
-             </PageTitleWrapper>
+                 subHeading="Intitulé du projet"
+                 />
+              </PageTitleWrapper>
                   </div>
                 </Box>
               </CardContent>
@@ -227,7 +233,8 @@ function Hero() {
     </Box>
       <Button
             component={RouterLink}
-            to="/components/forms"
+            to="management/profile/settings"
+            // href="https://docs.google.com/forms/d/e/1FAIpQLSdJDcBsutfZEFAzE_ZUDhanHistpOHkcaQpnw9j5pZ9wGfTQQ/viewform"
             size="large"
             variant="contained"
           >

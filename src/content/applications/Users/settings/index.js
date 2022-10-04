@@ -23,10 +23,9 @@ function ManagementUserSettings() {
   const [currentTab, setCurrentTab] = useState('activity');
 
   const tabs = [
-    { value: 'activity', label: 'Activity' },
-    { value: 'edit_profile', label: 'Edit Profile' },
-    { value: 'notifications', label: 'Notifications' },
-    { value: 'security', label: 'Passwords/Security' }
+    { value: 'web', label: 'Plateforme Web' },
+    { value: 'mobile', label: 'Application Mobile' },
+    { value: 'wmobile', label: 'Plateforme Web & Application Mobile' }
   ];
 
   const handleTabsChange = (event, value) => {
@@ -36,7 +35,7 @@ function ManagementUserSettings() {
   return (
     <>
       <Helmet>
-        <title>User Settings - Applications</title>
+        <title>Sastec Diagnostic</title>
       </Helmet>
       <PageTitleWrapper>
         <PageHeader />
@@ -64,9 +63,10 @@ function ManagementUserSettings() {
             </TabsWrapper>
           </Grid>
           <Grid item xs={12}>
-            {currentTab === 'activity' && <ActivityTab />}
-            {currentTab === 'edit_profile' && <EditProfileTab />}
-            {currentTab === 'notifications' && <NotificationsTab />}
+            {/* {currentTab === 'web' && <ActivityTab />} */}
+            {currentTab === 'web' && <EditProfileTab />}  
+            {currentTab === 'mobile' && <EditProfileTab />}
+            {currentTab === 'wmobile' && <NotificationsTab />}
             {currentTab === 'security' && <SecurityTab />}
           </Grid>
         </Grid>

@@ -18,13 +18,13 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { pink } from '@mui/material/colors';
 import Checkbox from '@mui/material/Checkbox';
-
+import Tabs from '@mui/material/Tabs';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
-
+import Tab from '@mui/material/Tab';
 import Stack from '@mui/material/Stack';
 import Slider from '@mui/material/Slider';
 import VolumeDown from '@mui/icons-material/VolumeDown';
@@ -69,7 +69,7 @@ function Forms() {
   return (
     <>
       <Helmet>
-        <title>Forms - Components</title>
+        <title>Sastec Diagnostic</title>
       </Helmet>
       <PageTitleWrapper>
         <PageTitle
@@ -78,6 +78,19 @@ function Forms() {
           docs="https://material-ui.com/components/text-fields/"
         />
       </PageTitleWrapper>
+      <Tabs
+                    variant="scrollable"
+                    scrollButtons="auto"
+                    textColor="primary"
+                    indicatorColor="primary"
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="basic tabs example"
+                  >
+                    <Tab label="Item One"  />
+                    <Tab label="Item Two"  />
+                    <Tab label="Item Three" />
+                  </Tabs>
       <Container maxWidth="lg">
         <Grid
           container
@@ -88,9 +101,10 @@ function Forms() {
         >
           <Grid item xs={12}>
             <Card>
-              <CardHeader title="Input Fields" />
+              <CardHeader title="Informations générales" />
               <Divider />
               <CardContent>
+                <text></text>
                 <Box
                   component="form"
                   sx={{

@@ -1,8 +1,8 @@
 import { Box, alpha, lighten, useTheme } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
-import Sidebar from './Sidebar';
-import Header from './Header';
+// import Sidebar from './Sidebar';
+// import Header from './Header';
 
 const SidebarLayout = () => {
   const theme = useTheme();
@@ -12,7 +12,7 @@ const SidebarLayout = () => {
       <Box
         sx={{
           flex: 1,
-          height: '100%',
+          height: '0%',
 
           '.MuiPageTitle-wrapper': {
             background:
@@ -36,12 +36,12 @@ const SidebarLayout = () => {
           }
         }}
       >
-        <Header />
-        <Sidebar />
+        {/* <Header />
+        <Sidebar /> */}
         <Box
           sx={{
             position: 'relative',
-            zIndex: 5,
+            zIndex: 1,
             display: 'block',
             flex: 1,
             pt: `${theme.header.height}`,

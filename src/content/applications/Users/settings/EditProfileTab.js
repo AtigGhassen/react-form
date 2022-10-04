@@ -12,6 +12,7 @@ import EditTwoToneIcon from '@mui/icons-material/EditTwoTone';
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 import Text from 'src/components/Text';
 import Label from 'src/components/Label';
+import TextField from '@mui/material/TextField';
 
 function EditProfileTab() {
   return (
@@ -25,16 +26,17 @@ function EditProfileTab() {
             justifyContent="space-between"
           >
             <Box>
-              <Typography variant="h4" gutterBottom>
-                Personal Details
-              </Typography>
-              <Typography variant="subtitle2">
-                Manage informations related to your personal details
-              </Typography>
+            <div>  <Typography variant="h4" gutterBottom>
+              Quel est l’usage principal de votre application (à quoi sert-elle) ?     </Typography>           
+                 <Typography variant="h4"  color="red">
+             *   </Typography></div>
+              {/* <Typography variant="subtitle2">
+                Cette partie nous donne une vision sur les informations générales de l'application  
+              </Typography> */}
             </Box>
-            <Button variant="text" startIcon={<EditTwoToneIcon />}>
+            {/* <Button variant="text" startIcon={<EditTwoToneIcon />}>
               Edit
-            </Button>
+            </Button> */}
           </Box>
           <Divider />
           <CardContent sx={{ p: 4 }}>
@@ -42,37 +44,15 @@ function EditProfileTab() {
               <Grid container spacing={0}>
                 <Grid item xs={12} sm={4} md={3} textAlign={{ sm: 'right' }}>
                   <Box pr={3} pb={2}>
-                    Name:
-                  </Box>
+                  Quel est l’usage principal de votre application (à quoi sert-elle) ?                  </Box>
                 </Grid>
-                <Grid item xs={12} sm={8} md={9}>
-                  <Text color="black">
-                    <b>Craig Donin</b>
-                  </Text>
-                </Grid>
-                <Grid item xs={12} sm={4} md={3} textAlign={{ sm: 'right' }}>
-                  <Box pr={3} pb={2}>
-                    Date of birth:
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={8} md={9}>
-                  <Text color="black">
-                    <b>15 March 1977</b>
-                  </Text>
-                </Grid>
-                <Grid item xs={12} sm={4} md={3} textAlign={{ sm: 'right' }}>
-                  <Box pr={3} pb={2}>
-                    Address:
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={8} md={9}>
-                  <Box sx={{ maxWidth: { xs: 'auto', sm: 300 } }}>
-                    <Text color="black">
-                      1749 High Meadow Lane, SEQUOIA NATIONAL PARK, California,
-                      93262
-                    </Text>
-                  </Box>
-                </Grid>
+                <div>
+                <TextField
+                      required
+                      id="outlined-required"
+                      label="Required"
+                      defaultValue=""
+                    /></div>            
               </Grid>
             </Typography>
           </CardContent>

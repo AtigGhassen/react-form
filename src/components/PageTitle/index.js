@@ -18,6 +18,7 @@ const PageTitle = ({ heading = '', subHeading = '', ...rest }) => {
       </Grid>
       <Grid item>
       <TextField
+                      fullWidth
                       required
                       id="outlined-required"
                       label="Required"

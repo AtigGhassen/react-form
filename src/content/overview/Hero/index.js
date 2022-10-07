@@ -233,7 +233,7 @@ function Hero() {
     </Box>
       <Button
             component={RouterLink}
-            to="management/profile/settings"
+            to="infos"
             // href="https://docs.google.com/forms/d/e/1FAIpQLSdJDcBsutfZEFAzE_ZUDhanHistpOHkcaQpnw9j5pZ9wGfTQQ/viewform"
             size="large"
             variant="contained"

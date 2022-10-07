@@ -732,63 +732,8 @@ function NotificationsTab() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} container spacing={3} >
-        <Box pb={2}>
-        <Typography variant="h3" color="#070C27" >. </Typography>
-          <Typography variant="h3">Equipe métier</Typography>
-          <Typography variant="subtitle2">
-          Cette  rubrique sert à donner des informations sur l'équipe
-          </Typography>
-        </Box>
-        <Grid item xs={12} >
-        <Card>
-          <Box
-            p={3}
-            display="flex"
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Box>
-              <Typography variant="h4" gutterBottom>
-              Est-ce qu'une ou plusieurs personnes dans votre organisation ont l'expertise "métier" de l'ensemble des fonctionnalités de l'application ? *          </Typography>
-              <Typography variant="subtitle2">
-              (Un choix est possible)
-              </Typography>
-            </Box>
-            {/* <Button variant="text" startIcon={<EditTwoToneIcon /> }>
-              Edit
-            </Button> */}
-          </Box>
-          <Divider />
-          <CardContent sx={{ p: 4 }}>
-            <Typography variant="subtitle2">
-              <Grid container spacing={0}>
-              <FormControl
-                required
-                error={error}
-                component="fieldset"
-                sx={{ m: 3 }}
-                variant="standard">
-      <FormLabel id="demo-radio-buttons-group-label">Choisir une réponse</FormLabel>
-      <RadioGroup
-        aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="female"
-        name="radio-buttons-group"
-      >
-        <FormControlLabel value="oui" control={<Radio />} label="Oui" />
-        <FormControlLabel value="ouienpartie" control={<Radio />} label="Oui en partie" />
-        <FormControlLabel value="non" control={<Radio />} label="Non" />
-        <FormControlLabel value="saispas" control={<Radio />} label="Je ne sais pas" />
-      </RadioGroup>
-    </FormControl>
-              </Grid>
-            </Typography>
-          </CardContent>
-        </Card>
-        
-      </Grid></Grid>
+
       </Grid>
-      
     </Grid>
   );
 }

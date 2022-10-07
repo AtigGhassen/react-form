@@ -27,13 +27,13 @@ function Footer() {
           }}
           variant="subtitle1"
         >
-          Crafted by{' '}
+          Powered by{' '}
           <Link
-            href="https://bloomui.com"
+            href="https://sastec-group.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            BloomUI.com
+            Sastec-group.com
           </Link>
         </Typography>
       </Box>

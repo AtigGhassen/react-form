@@ -36,6 +36,11 @@ const UserSettings = Loader(
   lazy(() => import('src/content/applications/Users/settings'))
 );
 
+const Specifications = Loader(
+  lazy(() => import('src/content/applications/Users/specifications'))
+);
+
+
 // Components
 
 const Buttons = Loader(
@@ -87,6 +92,14 @@ const routes = [
       {
         path: 'overview',
         element: <Navigate to="/" replace />
+      },
+      {
+        path: 'infos',
+        element: <UserSettings />
+      },
+      {
+        path: 'specifications',
+        element: <Specifications />
       },
       {
         path: 'status',

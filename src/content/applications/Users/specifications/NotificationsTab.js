@@ -60,9 +60,9 @@ function NotificationsTab() {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Box pb={2}>
-         <Typography variant="h3">Informations sur l'organisation</Typography>
+         <Typography variant="h3">Spécifications techniques</Typography>
           <Typography variant="subtitle2">
-          Cette rubrique sert à donner des informations sur l'organisation       </Typography> 
+          Cette rubrique sert à donner des informations sur les spécifications techniques du projet      </Typography> 
         </Box>
         <Card>
           <List>
@@ -695,7 +695,7 @@ function NotificationsTab() {
           >
             <Box>
               <Typography variant="h4" gutterBottom>
-              Quel est le nombre total d’utilisateurs de l’application ? *    </Typography>
+              Est-ce que l'application dans son intégralité fait l'objet d'une documentation fonctionnelle exhaustive et à jour ? *    </Typography>
               <Typography variant="subtitle2">
              ( Choisir une réponse )
               </Typography>
@@ -720,10 +720,9 @@ function NotificationsTab() {
              defaultValue="female"
              name="radio-buttons-group"
              >
-        <FormControlLabel value="utilis" control={<Radio />} label="Moins de 30 utilisateurs" />
-        <FormControlLabel value="trente" control={<Radio />} label="Entre 30 de 99 utilisateurs" />
-        <FormControlLabel value="cent" control={<Radio />} label="Entre 100 de 499 utilisateurs" />
-        <FormControlLabel value="cinqcent" control={<Radio />} label="Plus de 500 utilisateurs" />
+        <FormControlLabel value="permanence" control={<Radio />} label="Oui en permanence" />
+        <FormControlLabel value="cdc" control={<Radio />} label="Il existe un cahier des charges initial qui n'est pas systématiquement mis à jour" />
+        <FormControlLabel value="non" control={<Radio />} label="Non" />
         <FormControlLabel value="jenesaispas3" control={<Radio />} label="Je ne sais pas" />
            </RadioGroup>
            </FormControl>
@@ -732,63 +731,8 @@ function NotificationsTab() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} container spacing={3} >
-        <Box pb={2}>
-        <Typography variant="h3" color="#070C27" >. </Typography>
-          <Typography variant="h3">Equipe métier</Typography>
-          <Typography variant="subtitle2">
-          Cette  rubrique sert à donner des informations sur l'équipe
-          </Typography>
-        </Box>
-        <Grid item xs={12} >
-        <Card>
-          <Box
-            p={3}
-            display="flex"
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Box>
-              <Typography variant="h4" gutterBottom>
-              Est-ce qu'une ou plusieurs personnes dans votre organisation ont l'expertise "métier" de l'ensemble des fonctionnalités de l'application ? *          </Typography>
-              <Typography variant="subtitle2">
-              (Un choix est possible)
-              </Typography>
-            </Box>
-            {/* <Button variant="text" startIcon={<EditTwoToneIcon /> }>
-              Edit
-            </Button> */}
-          </Box>
-          <Divider />
-          <CardContent sx={{ p: 4 }}>
-            <Typography variant="subtitle2">
-              <Grid container spacing={0}>
-              <FormControl
-                required
-                error={error}
-                component="fieldset"
-                sx={{ m: 3 }}
-                variant="standard">
-      <FormLabel id="demo-radio-buttons-group-label">Choisir une réponse</FormLabel>
-      <RadioGroup
-        aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="female"
-        name="radio-buttons-group"
-      >
-        <FormControlLabel value="oui" control={<Radio />} label="Oui" />
-        <FormControlLabel value="ouienpartie" control={<Radio />} label="Oui en partie" />
-        <FormControlLabel value="non" control={<Radio />} label="Non" />
-        <FormControlLabel value="saispas" control={<Radio />} label="Je ne sais pas" />
-      </RadioGroup>
-    </FormControl>
-              </Grid>
-            </Typography>
-          </CardContent>
-        </Card>
-        
-      </Grid></Grid>
+
       </Grid>
-      
     </Grid>
   );
 }

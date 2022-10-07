@@ -126,7 +126,7 @@ function HeaderUserbox() {
           </ListItem>
           <ListItem
             button
-            to="/management/profile/settings"
+            to="/infos"
             component={NavLink}
           >
             <AccountTreeTwoToneIcon fontSize="small" />
